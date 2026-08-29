@@ -1,4 +1,4 @@
-import fb from "../assets/project/fb.png"
+import fb from "../assets/project/image.png"
 
 
 export const projects = [
@@ -8,8 +8,18 @@ export const projects = [
     description: "A full-featured f&b platform with cart, checkout, inventory and payment integration.",
     thumbnail: fb,
     technologies: [ "React", "Supa Base", "Tailwind CSS"],
-    liveUrl: "https://pos-it-ruby.vercel.app/",
-    githubUrl: "https://github.com/izumi-dev98/POS_IT.git",
+    liveUrl: "",
+    githubUrl: "https://github.com/Aungpie01/Student-record-system.git",
+  },
+
+  {
+    id: 2,
+    title: "F&B POS System",
+    description: "A full-featured f&b platform with cart, checkout, inventory and payment integration.",
+    thumbnail: fb,
+    technologies: [ "React", "Supa Base", "Tailwind CSS"],
+    liveUrl: "",
+    githubUrl: "https://github.com/Aungpie01/Student-record-system.git",
   },
  
 ];

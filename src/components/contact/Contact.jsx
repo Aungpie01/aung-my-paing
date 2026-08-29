@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faTelegram, faViber } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faLocationDot, faPaperPlane, faCheck, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser';
 
@@ -83,6 +83,38 @@ const Contact = () => {
                     className="text-text-primary hover:text-accent transition-colors"
                   >
                     aungpaing.sky2020@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
+                  <FontAwesomeIcon icon={faTelegram} className="text-accent text-xl" />
+                </div>
+                <div>
+                  <p className="text-text-secondary text-sm">Telegram</p>
+                  <a
+                    href="https://t.me/Aung_Pie"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-text-primary hover:text-accent transition-colors"
+                  >
+                    @Aung_Pie
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
+                  <FontAwesomeIcon icon={faViber} className="text-accent text-xl" />
+                </div>
+                <div>
+                  <p className="text-text-secondary text-sm">Viber</p>
+                  <a
+                    href="tel:+959420904320"
+                    className="text-text-primary hover:text-accent transition-colors"
+                  >
+                    09420904320
                   </a>
                 </div>
               </div>

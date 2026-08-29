@@ -1,5 +1,5 @@
 import FSDC from "../assets/certficates/FSDC.jpg";
-import ReactCourse from "../assets/certficates/reactcourse.jpg";
+import ReactCourse from "../assets/certficates/python.png";
 
 export const certificates = [
   {

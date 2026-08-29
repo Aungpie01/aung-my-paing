@@ -8,6 +8,8 @@ export const experiences = [
     location: "Taunggyi, Myanmar",
     description: [
       "Computer Science student with an interest in IT and cybersecurity. Currently learning PHP (Laravel), SQL, and JavaScript(React.js) while building a strong foundation in programming and security basics. Motivated learner with problem-solving skills and improving communication ability in English for future IT career growth.",
-    ],
+      "QakBot Malware Analysis – Asian Cyber Shield Program",
+      "SwiftFix - KBZ Hackthon (2025)",
+    ], 
   },
 ];

@@ -7,7 +7,6 @@ const SkillsAnimation = () => {
         {/* Gradient overlays for seamless effect */}
         <div className="absolute left-0 top-0 bottom-0 w-32 bg-linear-to-r from-primary to-transparent z-10" />
         <div className="absolute right-0 top-0 bottom-0 w-32 bg-linear-to-l from-primary to-transparent z-10" />
-        <div>  <i className="devicon-tailwindcss-plain text-4xl"></i> </div>
 
         {/* Infinite scrolling marquee */}
         <div className="flex animate-marquee">
