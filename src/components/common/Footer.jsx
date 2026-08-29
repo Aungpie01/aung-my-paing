@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faTelegram, faViber } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
@@ -8,8 +8,9 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: faLinkedin, url: 'www.linkedin.com/in/nay-myo-maung-dev', label: 'LinkedIn' },
-    { icon: faGithub, url: 'https://github.com/izumi-dev98', label: 'GitHub' },
+    { icon: faLinkedin, url: 'https://www.linkedin.com/in/aung-paing-ab5233396/', label: 'LinkedIn' },
+    { icon: faGithub, url: 'https://github.com/Aungpie01', label: 'GitHub' },
+    { icon: faTelegram, url: 'https://t.me/Aung_Pie', label: 'Telegram' }, 
  
   ];
 

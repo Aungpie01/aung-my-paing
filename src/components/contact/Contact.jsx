@@ -66,7 +66,7 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: faLinkedin, url: 'www.linkedin.com/in/aung-paing-ab5233396', label: 'LinkedIn' },
+    { icon: faLinkedin, url: 'https://www.linkedin.com/in/aung-paing-ab5233396/', label: 'LinkedIn' },
     { icon: faGithub, url: 'https://github.com/Aungpie01', label: 'GitHub' },
     { icon: faTelegram, url: 'https://t.me/Aung_Pie', label: 'Telegram' },
     { icon: faViber, url: 'tel:+959420904320', label: 'Viber' },
