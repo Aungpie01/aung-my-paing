@@ -4,6 +4,11 @@ import { faLinkedin, faGithub, faTelegram, faViber } from '@fortawesome/free-bra
 import { faEnvelope, faLocationDot, faPaperPlane, faCheck, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser';
 
+const EMAILJS_ENABLED = true;
+const EMAILJS_SERVICE_ID = 'service_gqumegq';
+const EMAILJS_TEMPLATE_ID = 'template_ilrmtel';
+const EMAILJS_PUBLIC_KEY = 'wSsVx3QB6rRwGQsJm';
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -20,16 +25,33 @@ const Contact = () => {
     e.preventDefault();
     setStatus('submitting');
 
+    const fallbackMailto = `mailto:aungpaing.sky2020@gmail.com?subject=${encodeURIComponent('Portfolio Contact Form')}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )}`;
+
+    if (!EMAILJS_ENABLED) {
+      window.location.href = fallbackMailto;
+      setStatus('success');
+      setFormData({ name: '', email: '', message: '' });
+      setTimeout(() => setStatus('idle'), 3000);
+      return;
+    }
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+      subject: 'Portfolio Contact Form',
+    };
+
     try {
       await emailjs.send(
-        'service_3h1enti', // service key
-        'template_8bbx3j7', // template key
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-        },
-        'YVG7_tm1BO8q4GZma' // Public Key
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_PUBLIC_KEY
       );
 
       setStatus('success');
@@ -38,14 +60,16 @@ const Contact = () => {
     } catch (error) {
       console.error('EmailJS Error:', error);
       setStatus('error');
+      window.location.href = fallbackMailto;
       setTimeout(() => setStatus('idle'), 3000);
     }
   };
 
   const socialLinks = [
-    { icon: faLinkedin, url: 'www.linkedin.com/in/nay-myo-maung-dev', label: 'LinkedIn' },
-    { icon: faGithub, url: 'https://github.com/izumi-dev98', label: 'GitHub' },
-    
+    { icon: faLinkedin, url: 'www.linkedin.com/in/aung-paing-ab5233396', label: 'LinkedIn' },
+    { icon: faGithub, url: 'https://github.com/Aungpie01', label: 'GitHub' },
+    { icon: faTelegram, url: 'https://t.me/Aung_Pie', label: 'Telegram' },
+    { icon: faViber, url: 'tel:+959420904320', label: 'Viber' },
   ];
 
   return (
