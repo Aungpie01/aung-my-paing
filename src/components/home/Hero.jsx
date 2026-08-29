@@ -90,8 +90,8 @@ const Hero = () => {
             isVisible ? 'animate-fade-in-up delay-200' : ''
           }`}
         >
-          <span className="text-text-secondary">Laravel & </span>
-          <span className="text-accent">React Developer</span>
+          <span className="text-text-secondary">Final Year   </span>
+          <span className="text-accent">  Student </span>
         </h2>
 
         {/* Tagline */}
