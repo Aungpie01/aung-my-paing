@@ -63,7 +63,7 @@ const About = () => {
               <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden border-4 border-accent/30 bg-secondary shadow-2xl">
                 <img
                   src={profileImg}
-                  alt="Nay Myo Maung (Izumi)"
+                  alt="Aung Myo Paing (Nova)"
                   className="w-full h-full object-cover"
                 />
               </div>

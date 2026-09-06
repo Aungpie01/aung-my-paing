@@ -125,7 +125,7 @@ portfolio/
 **Layout**: Full viewport height, centered content
 
 **Content**:
-- Greeting text: "Hello, I'm [Nay Myo Maung (Izumi)]"
+- Greeting text: "Hello, I'm [Aung Myo Paing (Nova)]"
 - Role text: "Laravel & React Developer"
 - Brief tagline describing expertise "Laravel & React Developer crafting scalable, high-performance web applications."
 - Two CTA buttons: "View My Work" (primary), "Contact Me" (outline)
